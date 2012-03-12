@@ -1,0 +1,25 @@
+<VirtualHost *:80>
+	ServerAdmin info@visualized.dk
+	ServerName %NAME%
+	ServerAlias www.%NAME%
+	DocumentRoot /www/%NAME%/httpdocs
+	<Directory />
+		Options FollowSymLinks
+		AllowOverride None
+	</Directory>
+	<Directory /www/%NAME%/httpdocs>
+		Options FollowSymLinks MultiViews
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	ErrorLog /www/%NAME%/logs/error.log
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel warn
+
+	CustomLog /www/%NAME%/logs/access.log combined
+
+</VirtualHost>

@@ -1,0 +1,11 @@
+{
+	"apache": {
+		/** It will change every instance of %NAME% with the provided domain name */
+		"template": "/opt/hosting/tmpl/apache",
+		"wwwroot": "/www",
+		"wwwrootUid": 33,
+		"wwwrootGid": 33
+	},
+	"mysqlConnection": {"host": "localhost", "user": "root", "password": "somepassword" },
+	"pureftpd": { "database": "pureftpd", "table": "users" }
+}
