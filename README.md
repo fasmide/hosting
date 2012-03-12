@@ -6,4 +6,4 @@ Its written in CoffeeScript and is intented to be used with nodejs
 
 I'm using it with ubuntu server and the standard configuration of the packages libapache2-mod-php5 (this package automaticly selects apache +php for installation), mysql-server and pure-ftpd-mysql
 
-![Screenshot](/example/screenshot.png)
+![Screenshot](/fasmide/hosting/blob/master/example/screenshot.png)
